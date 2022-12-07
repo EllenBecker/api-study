@@ -20,7 +20,8 @@ import { ConteudoModule } from './conteudo/conteudo.module';
       database: process.env.TYPEORM_DATABASE,
       synchronize: true,
       entities: [process.env.TYPEORM_ENTITIES]
-    })
+    }),
+    ConteudoModule
   ],
   controllers: [AppController],
   providers: [AppService],
