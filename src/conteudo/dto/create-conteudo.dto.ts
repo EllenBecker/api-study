@@ -8,5 +8,9 @@ export class CreateConteudoDto {
 
     @IsNotEmpty()
     @IsString()
+    titulo: string;
+    
+    @IsNotEmpty()
+    @IsString()
     descricao: string;
 }

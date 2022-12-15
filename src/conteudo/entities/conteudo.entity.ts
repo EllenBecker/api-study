@@ -10,6 +10,9 @@ export class Conteudo {
     tipoTecnologia: EnumTipoTecnologia;
 
     @Column()
+    titulo: string;
+
+    @Column()
     descricao: string;
 
     @CreateDateColumn({ name: 'created_date' })
